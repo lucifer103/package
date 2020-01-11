@@ -19,3 +19,5 @@ Route::get('/', function () {
 Route::get('markdown', function () {
     return view('foo');
 });
+
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
