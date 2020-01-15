@@ -1,0 +1,5 @@
+*.json
+*.json.gz
+index
+*
+!.gitignore

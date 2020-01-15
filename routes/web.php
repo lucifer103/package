@@ -21,3 +21,12 @@ Route::get('markdown', function () {
 });
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+
+Route::get('clockwork', function () {
+    // 时间线
+    clock()->startEvent('root', "首页");
+    // 添加日志
+    logger('logger log');
+    clock('clock log');
+    clock()->endEvent('root');
+});
