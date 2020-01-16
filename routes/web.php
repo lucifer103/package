@@ -30,3 +30,7 @@ Route::get('clockwork', function () {
     clock('clock log');
     clock()->endEvent('root');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
