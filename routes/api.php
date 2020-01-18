@@ -33,3 +33,5 @@ Route::get('foobar', function () {
 
     abort('403', 'test Exception');
 });
+
+Route::post('images', 'Api\ImageController@store')->name('api.images.store');
