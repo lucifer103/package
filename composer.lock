@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc1297aa13003da8db6a25039d20789e",
+    "content-hash": "a565af477d6c41319749232cc887647a",
     "packages": [
         {
             "name": "cachethq/emoji",
@@ -2423,6 +2423,68 @@
                 "lumen"
             ],
             "time": "2019-12-03T22:00:29+00:00"
+        },
+        {
+            "name": "spatie/laravel-tail",
+            "version": "3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-tail.git",
+                "reference": "643888e3c5a3fe3a88b172c06d3a837ae33de93b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-tail/zipball/643888e3c5a3fe3a88b172c06d3a837ae33de93b",
+                "reference": "643888e3c5a3fe3a88b172c06d3a837ae33de93b",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "illuminate/console": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0",
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0",
+                "php": "^7.0",
+                "symfony/process": "^3.3|^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Tail\\TailServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Tail\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://murze.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily tail the application log",
+            "homepage": "https://github.com/spatie/laravel-tail",
+            "keywords": [
+                "development",
+                "laravel",
+                "laravel-tail",
+                "log",
+                "tail"
+            ],
+            "time": "2019-09-04T09:56:49+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
