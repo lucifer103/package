@@ -38,3 +38,8 @@ Route::get('clockwork', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('dump', function () {
+    dump(request()->all());
+    return view('welcome');
+});
