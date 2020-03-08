@@ -57,3 +57,8 @@ Route::group(['middleware' => ['auth', 'caffeinated']], function () {
 Route::get('drip', function () {
     return response(null, 204);
 });
+
+Route::get('carbon', function() {
+    $user = App\User::first();
+    dd($user->created_at->diffForHumans());
+});
