@@ -11,6 +11,7 @@
         "php": "^7.2",
         "cachethq/emoji": "^3.0",
         "fideloper/proxy": "^4.0",
+        "genealabs/laravel-caffeine": "1.0.5",
         "graham-campbell/markdown": "^11.1",
         "intervention/image": "^2.5",
         "itsgoingd/clockwork": "^4.0",

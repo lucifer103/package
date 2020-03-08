@@ -43,3 +43,17 @@ Route::get('dump', function () {
     dump(request()->all());
     return view('welcome');
 });
+
+Route::group(['middleware' => ['auth', 'caffeinated']], function () {
+    Route::get('form', function () {
+        return view('form');
+    });
+
+    Route::post('form', function () {
+        dump(app('request')->all());
+    });
+});
+
+Route::get('drip', function () {
+    return response(null, 204);
+});
