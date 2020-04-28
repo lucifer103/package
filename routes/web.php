@@ -62,3 +62,5 @@ Route::get('carbon', function() {
     $user = App\User::first();
     dd($user->created_at->diffForHumans());
 });
+
+Route::get('barcode', 'BarCodeController@index')->name('barcode.index');
